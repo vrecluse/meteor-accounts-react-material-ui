@@ -6,10 +6,10 @@ Package.describe({
 });
 
 Npm.depends({
-  'externalify': '^0.1.0',
-  'react-tap-event-plugin': '^0.2.1',
-  'react': '0.14.x',
-  'material-ui': '^0.13.4'
+  'externalify': '0.1.0',
+  'react-tap-event-plugin': '0.2.2',
+  'react': '0.14.7',
+  'material-ui': '0.14.4'
 });
 
 DEFAULT_LANGUAGES = ['ar', 'zh_cn', 'ca', 'cs', 'da', 'de', 'el', 'en', 'es',
@@ -31,10 +31,10 @@ Package.onUse(function(api, where) {
   api.use([
     'ejson@1.0.7',
     'underscore',
+	'jsx@0.2.3',
     'accounts-base',
-    'ecmascript',
+	'cosmos:browserify@0.9.2',
     'templating',  // required to auto inslude oauth services forms
-    'cosmos:browserify@0.9.2',
     'qnub:t9n@0.0.2'
   ]);
 
